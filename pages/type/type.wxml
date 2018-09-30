@@ -1,0 +1,33 @@
+<!--pages/type/type.wxml--> 
+<view class="normal_adver_container">
+
+<scroll-view scroll-y="true" class="sports_type_scroll"> 
+  
+    <view  class = "{{item.isSelected?'sport_type_text_selected':'sport_type_text'}}"  wx:for="{{sportTypeList}}" id="{{index}}"   bindtap='selectSportType' wx:key="{{inedx}}">
+        {{item.name}}
+    </view>
+</scroll-view>
+
+<view class="normal_adver_list">
+    <!-- <view class="select_style" style="display:flex">
+        <view class="selectItem"> 全城 </view>
+        <view class="selectItem"> 智能排序 </view>
+        <view class="selectItem"> 筛选 </view>
+    </view> -->
+    <view class="normal_adver"  bindtap='toClass' data-id="{{item.id}}" wx:for="{{normalAdverList}}" wx:key="{{inedx}}">
+        <image class="normal_adver_image" mode="aspectFill" src="{{item.showImage}}"> </image>
+        <view class="normal_adver_des">
+            <view class="normal_adver_name">{{item.name}}</view>
+                <view class="starContainer">
+                    <image class="star" id="star1" wx:if="{{item.score >= 1}}" src="/images/star1.png"></image>
+                    
+                    <image class="star" id="star2" wx:if="{{item.score >= 2}}" src="/images/star1.png"></image>
+                    <image class="star" id="star3" wx:if="{{item.score >= 3}}" src="/images/star1.png"></image>
+                    <image class="star" id="star4" wx:if="{{item.score >= 4}}" src="/images/star1.png"></image>
+                    <image class="star" id="star5" wx:if="{{item.score >= 5}}" src="/images/star1.png"></image>
+                </view>
+                <view wx:if="{{item.price}}"class="normal_adver_price"data-id="{{item.id}}"> 人均: {{item.price}} </view>
+            </view>
+        </view>
+    </view> 
+</view>

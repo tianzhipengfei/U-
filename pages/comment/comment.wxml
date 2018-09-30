@@ -1,0 +1,63 @@
+<!--pages/comment/comment.wxml-->
+<view class="productName">{{productName}}</view>
+<view class="starBox">
+    <view class="starItem">
+        <view class="starType">场馆设施</view>
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star" id="star1" wx:if="{{score[1] >= item}}" data-id="{{10 + index}}" bindtap="change" src="/images/star1.png"></image>
+                <image class="star" id="star1" data-id="{{10 + index}}" bindtap="change" wx:else src="/images/star0.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="starItem">
+        <view class="starType">教练</view>
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star" id="star1" data-id="{{20 + index}}" bindtap="change" wx:if="{{score[2] >= item}}" src="/images/star1.png"></image>
+                <image class="star" id="star1" data-id="{{20 + index}}" bindtap="change" wx:else src="/images/star0.png">{{index}}</image>
+            </view>
+        </view>
+    </view>
+
+    <view class="starItem">
+        <view class="starType">服务</view>
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star" id="star1" data-id="{{30 + index}}" bindtap="change" wx:if="{{score[3] >= item}}" src="/images/star1.png"></image>
+                <image class="star" id="star1" data-id="{{30 + index}}" bindtap="change" wx:else src="/images/star0.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="starItem">
+        <view class="starType">课程 </view>
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star" id="star1" data-id="{{40 + index}}" bindtap="change" wx:if="{{score[4] >= item}}" src="/images/star1.png"></image>
+                <image class="star" id="star1" data-id="{{40 + index}}" bindtap="change" wx:else src="/images/star0.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <view class="starItem">
+        <view class="starType">总体评价</view>
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star" id="star1" wx:if="{{score[0] >= item}}" src="/images/star1.png" data-id="{{index}}" bindtap="change"></image>
+                <image class="star" id="star1" wx:else src="/images/star0.png" data-id="{{index}}" bindtap="change"></image>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="textarea-wrp">
+    <textarea auto-focus="true" placeholder="亲爱的，场馆设备怎么样？服务您还满意么？" show-confirm-bar="false" bindinput="changeContent" bindblur="changeContent" style="font-size: 30rpx; padding-left:20rpx; padding-right:20rpx;" />
+</view>
+
+<view class="button" style="width:200rpx; height:60rpx; line-height:60rpx; font-size:35rpx; background-color:#186AAE; color:white; text-align: center; margin-left:275rpx; margin-top:40rpx;" bindinput="submitComment" bindtap="submitComment"> 发表 </view>
+
+<!-- <view class="addPhotoContainer">
+    <image src="/images/uploadPhoto.png" class="addPhoto"/>
+</view> -->

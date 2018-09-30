@@ -1,0 +1,176 @@
+/* pages/index/index.wxss */
+
+page {
+    background: #fff;
+}
+
+#navigator {
+    width: 100%;
+    height: 100rpx;
+    background: #69B4E8;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.seachBar{
+    width: 100%;
+    background: #69B4E8;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.searchHistoryItem{
+    height: 42rpx;
+    background-color: #EBEBEB;
+    padding-left:10rpx;
+    padding-right: 10rpx;
+    font-size: 30rpx;
+    margin: 20rpx;
+    margin-top: 0rpx;
+}
+
+.searchHistoryContainer{
+    display:flex; 
+    flex-wrap:wrap;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+#addressContainer {
+    margin-left: 10rpx;
+    margin-top: 30rpx;
+    width: 160rpx auto;
+    display: flex;
+    margin-right: 10rpx;
+}
+
+#locationIcon {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+#address {
+    margin-left: 20rpx;
+    font-size: 30rpx;
+    line-height: 42rpx;
+    color: white;
+}
+
+#searchBar {
+    display: flex;
+    width: auto;
+    height: 56rpx;
+    margin-top: 22rpx;
+    background: #fff;
+    flex-direction: row;
+    border-radius: 10rpx;
+    margin-right: 20rpx;
+    margin-left: 20rpx;
+}
+
+#searchIcon{
+    height: 42rpx;
+    width: 42rpx;
+    align-self: center;
+    margin-left: 10rpx;
+    margin-right: 20rpx;
+}
+
+#select {
+    height: 56rpx;
+    flex: 1;
+    width: auto;
+    font-size: 30rpx;
+}
+
+#pushIcon {
+    margin-left:15rpx;
+    margin-top: 30rpx;
+    width: 42rpx;
+    height: 42rpx;
+}
+
+#adverSwiper {
+    height: 350rpx;
+    width: 750rpx;
+}
+
+#typeContainer {
+    height: 240rpx;
+    width: 750rpx;
+    background: #fff;
+}
+
+.typeItem {
+    width: 183.5rpx;
+    height: 120rpx;
+    float: left;
+}
+
+.typeIcon {
+    position: relative;
+    top: 10rpx;
+    left: 68.75rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.typeDesc {
+    font-size: 30rpx;
+    line-height: 60rpx;
+    text-align: center;
+    width: 187.5rpx;
+    height: 50rpx;
+}
+
+.normal_adver{
+    top: 80rpx;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.normal_adver_image{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 10rpx;
+}
+
+.normal_adver_des{
+    width: 410rpx;
+    margin: 10rpx;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.normal_adver_name{
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.normal_adver_price{
+    font-size: 24rpx;
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.starContainer{
+    height: 50rpx;
+    padding-bottom: 20rpx;
+    display: flex;
+}
+
+.star{
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.bottomImage{
+    height: 400rpx;
+    width: 750rpx;
+}

@@ -1,0 +1,22 @@
+<!--pages/commentDetail/commentDetail.wxml-->
+<view class="productName">{{className}}</view>
+
+<view class="comment">
+    <view class="commentItem" wx:for="{{commentList}}" wx:key="">
+        <view class="comment_avatar_name_star">
+            <image class="comment_avatar" src="{{item.avatar}}"/>
+            <view class="comment_name_star">
+                <view class="comment_name">{{item.name}}</view>
+                <view class="comment_starContainer" >
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="score" wx:key="">
+                        <image class="star1" id="star1" wx:if="{{item.score >= score}}" src="/images/star1.png"></image>
+                        <image class="star1" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="date">{{item.date}}</view>
+        </view>
+        <view class="comment_content"> {{item.content}} </view>
+        
+    </view>
+</view>

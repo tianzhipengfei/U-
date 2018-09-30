@@ -1,0 +1,24 @@
+<!--pages/commentDetailUser/commentDetailUser.wxml-->
+<view class="header" style="display:flex;">
+    <image class="avatar" src="{{userAvatar}}"/>
+    <view class="productName">{{userName}}</view>
+</view>
+
+<view class="comment">
+    <view class="commentItem" wx:for="{{commentList}}" wx:key="" data-id="{{item.classId}}" data-date="{{item.dateDetail}}">
+        <view class="comment_avatar_name_star" >
+            <view class="comment_name_star">
+                <view class="comment_name">{{item.name}}</view>
+                <view class="comment_starContainer" >
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="score" wx:key="">
+                        <image class="star1" id="star1" wx:if="{{item.score >= score}}" src="/images/star1.png"></image>
+                        <image class="star1" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="date">{{item.date}}</view>
+        </view>
+        <view class="comment_content"> {{item.content}} 
+        </view><view id='deleteComment' bindtap='deleteComment' data-id="{{item.classId}}" data-date="{{item.dateDetail}}"> 删除 </view>
+    </view>
+</view>

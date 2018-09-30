@@ -1,0 +1,151 @@
+/* pages/myFavor/myFavor.wxss */
+page {
+    background: #f5f5f5;
+}
+
+.header{
+    background-color: white;
+    width: 100%;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    height: 130rpx;
+    border-bottom: 5rpx rgba(0, 0, 0, 0.1) solid;
+    display: flex;
+    align-items: center;
+}
+
+.productName {
+    margin-left: 40rpx;
+    line-height: 100rpx;
+    font-size: 40rpx;
+    text-align: center;
+}
+
+.avatar{
+    width:120rpx;
+    height: 120rpx;
+    border-radius: 60rpx;
+    margin-left: 100rpx;
+}
+
+.comment{
+    width: 690rpx;
+    height: 100% auto;
+    padding: 40rpx;
+    padding-bottom: 20rpx;
+    margin-top: 20rpx;
+    background: white;
+    margin-bottom: 130rpx;
+}
+
+.commentList{
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_avatar_name_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment_name_star{
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    width: 470rpx;
+}
+
+.star1{
+    width: 30rpx;
+    height: 30rpx;
+    /* margin-top: 10rpx; */
+}
+
+.commentItem{
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    border-top: 2rpx #C5C5C5 solid;
+}
+
+.comment_starContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.date{
+    line-height: 33rpx;
+    font-size: 24rpx;
+    align-self: flex-start;
+}
+
+.comment_name{
+    line-height: 33rpx;
+    font-size: 24rpx;
+}
+
+.comment_content{
+    font-size: 30rpx;
+    line-height: 42rpx;
+    padding-left:20rpx;
+    padding-right: 20rpx;
+}
+
+
+.normal_adver{
+    top: 30rpx;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: white;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10rpx;
+}
+
+.normal_adver:last-child{
+    margin-bottom: 0rpx;
+}
+
+.normal_adver_image{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 10rpx;
+}
+
+.normal_adver_des{
+    width: 410rpx;
+    margin: 10rpx;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.normal_adver_name{
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.normal_adver_price{
+    font-size: 24rpx;
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.starContainer{
+    height: 50rpx;
+    padding-bottom: 20rpx;
+    display: flex;
+}
+
+.star{
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.bottomImage{
+    height: 400rpx;
+    width: 750rpx;
+}

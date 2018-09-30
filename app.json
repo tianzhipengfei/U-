@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/toBeStore/toBeStore",
+        "pages/user/user",
+        "pages/index/index",
+        "pages/product/product",
+        "pages/commentDetailUser/commentDetailUser",
+        "pages/type/type",
+        "pages/commentDetail/commentDetail",
+        "pages/comment/comment",
+        "pages/news/news",
+        "pages/newDetail/newDetail",
+        "pages/myFavor/myFavor"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#186AAE",
+        "navigationBarTitleText": "U选体育",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#909090",
+        "selectedColor": "#0166B3",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "images/tab/homeSelected.png",
+                "iconPath": "images/tab/homeUnselected.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "images/tab/typeSelected.png",
+                "iconPath": "images/tab/typeUnselected.png",
+                "pagePath": "pages/type/type",
+                "text": "分类"
+            },
+            {
+                "selectedIconPath": "images/tab/newsSelected.png",
+                "iconPath": "images/tab/newsUnselected.png",
+                "pagePath": "pages/news/news",
+                "text": "看看"
+            },
+            {
+                "selectedIconPath": "images/tab/userSelected.png",
+                "iconPath": "images/tab/userUnselected.png",
+                "pagePath": "pages/user/user",
+                "text": "我的"
+            }
+        ]
+    }
+}

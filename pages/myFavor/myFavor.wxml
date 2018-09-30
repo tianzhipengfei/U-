@@ -1,0 +1,19 @@
+<!--pages/myFavor/myFavor.wxml-->
+<view class="header" style="display:flex;">
+    <image class="avatar" src="{{userAvatar}}" />
+    <view class="productName">{{userName}}</view>
+</view>
+
+<view class="normal_adver" data-id="{{item.id}}" wx:for="{{normalAdverList}}" wx:key="" bindtap="toClass">
+    <image class="normal_adver_image" mode="aspectFill" data-id="{{item.id}}" src="{{item.showImage}}"> </image>
+    <view class="normal_adver_des" data-id="{{item.id}}">
+        <view class="normal_adver_name" data-id="{{item.id}}">{{item.name}}</view>
+        <view class="starContainer" data-id="{{item.id}}">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="num" wx:key="" data-id="{{item.id}}">
+                <image class="star" id="star1" data-id="{{item.id}}" wx:if="{{item.score >= num}}" src="/images/star1.png"></image>
+                <image class="star" id="star1" data-id="{{item.id}}" wx:else src="/images/star0.png"></image>
+            </view>
+        </view>
+        <view wx:if="{{item.price}}" class="normal_adver_price" data-id="{{item.id}}"> 人均: {{item.price}} </view>
+    </view>
+</view>

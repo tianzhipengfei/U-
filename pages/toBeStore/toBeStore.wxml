@@ -1,0 +1,16 @@
+<!--pages/toBeStore/toBeStore.wxml-->
+<view id="blankBack">
+    <view class="title" id="title1"> 申请商家信息 </view>
+    <view class="title" id="title2"> 公司名称 </view>
+    <input class="input" bindinput="inputCompanyName"></input>
+    <view class="title" id="title2"> 商家地址 </view>
+    <input class="input" bindinput="inputCompanyAddress"></input>
+    <view class="title" id="title2"> 负责人姓名 </view>
+    <input class="input" bindinput="inputCompanyContactName"></input>
+    <view class="title" id="title2"> 手机号码 </view>
+    <input class="input" bindinput="inputCompanyPhone"></input>
+    <view class="title" id="title2"> 营业执照 </view>
+    <image wx:if="{{!uploadPhoto}}" class="uploadPhoto" bindtap='uploadPhtot' src="/images/toBeStore/uploadPhoto.png"/>
+</view>
+
+<image id="confirmButton" src="/images/toBeStore/confirmButton.png" />

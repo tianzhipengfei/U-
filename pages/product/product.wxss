@@ -1,0 +1,265 @@
+/* pages/detailForProduct/product.wxss */
+page{
+    background: #F5F5F5;
+}
+
+.header{
+    background: white;
+    width: 100%;
+    height: 400rpx auto;
+    display: flex;
+    padding-bottom: 20rpx;
+}
+
+.productImage{
+    width: 300rpx;
+    height: 300rpx;
+    margin-top: 50rpx;
+    margin-left: 50rpx;
+    float: left;
+}
+
+.productName{
+    float: left;
+    font-size: 30rpx;
+    line-height: 60rpx;
+    margin-top: 60rpx;
+    margin-left: 30rpx;
+}
+
+.starContainer{
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 30rpx;
+}
+
+.star{
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.gradeDetail{
+    display: flex;
+    align-items: center;
+    height: 40rpx;
+}
+
+.starDetail{
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.headerTextContainer{
+    float: left;
+    width: 270rpx;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+}
+
+.like{
+     margin-right: 50rpx; 
+    margin-top: 70rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.headerText{
+    color: #979797;
+    line-height: 33rpx;
+    font-size: 24rpx;
+}
+
+.location{
+    margin-top: 20rpx;
+    width: 710rpx;
+    height: 100rpx auto;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+#locationIcon{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.address_scorll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 590rpx; 
+    height:140rpx;
+}
+
+#buttonText{
+    line-height: 35rpx;
+    font-size: 28rpx;
+    width: 590rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    height: auto;
+}
+
+.description{
+    margin-top: 20rpx;
+    width: 710rpx;
+    height: 100rpx auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.des_text{
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    padding-top: 10rpx;
+    padding-bottom: 20rpx;
+    line-height: 45rpx;
+    font-size: 32rpx;
+}
+
+.commentHeader{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15rpx;
+}
+
+#phoneIcon{
+    width: 50rpx;
+    height: 50rpx;
+    padding-left: 20rpx;
+    border-left: 1rpx #AEAEAE solid;
+}
+
+.rightIcon{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+#companyIcon{
+    width: 50rpx;
+    height: 50rpx;
+}
+
+#commentFirstLine{
+    line-height: 35rpx;
+    font-size: 28rpx;
+    width: 640rpx;
+    padding-left: 10rpx;
+}
+
+.comment{
+    width: 690rpx;
+    height: 100% auto;
+    padding: 40rpx;
+    padding-bottom: 20rpx;
+    margin-top: 20rpx;
+    background: white;
+    margin-bottom: 130rpx;
+}
+
+.commentList{
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_avatar_name_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment_name_star{
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    width: 390rpx;
+}
+
+.comment_avatar{
+    width:80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+}
+
+.star1{
+    width: 30rpx;
+    height: 30rpx;
+    /* margin-top: 10rpx; */
+}
+
+.commentItem{
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    border-top: 2rpx #C5C5C5 solid;
+}
+
+.comment_starContainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.date{
+    line-height: 33rpx;
+    font-size: 24rpx;
+    align-self: flex-start;
+}
+
+.comment_name{
+    line-height: 33rpx;
+    font-size: 24rpx;
+}
+
+.comment_content{
+    font-size: 30rpx;
+    line-height: 42rpx;
+    padding-left:80rpx;
+}
+
+.myComment{
+    position: fixed;
+    width: 730rpx;
+    height: 100rpx;
+    background: white;
+    bottom: 0rpx;
+    z-index: 111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10rpx #F5F5F5 solid;
+}
+
+.myCommentItem{
+    width: 325rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myCommentItem1{
+    border-right: 1rpx #D2D2D2 solid;
+}
+
+.myCommentIcon{
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.myCommentText{
+    color: #999899;
+    line-height: 20rpx;
+    font-size: 20rpx;
+}

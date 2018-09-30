@@ -1,0 +1,41 @@
+<!--pages/user/user.wxml-->
+<view class="avatar_wrapper">
+    <button class="login_button" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        <image class="login_image" src="/images/user/login_button.png"/>
+        <view class="login_text"> 点击登录 </view>
+    </button>
+    <view wx:else style="display:flex">
+        <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user_text">
+            <view class="username"> {{userInfo.nickName}} </view>
+            <view class="user_location">{{userPoint}} </view>
+        </view>
+    </view>
+</view>
+
+<view class="buttonGroup">
+    <view class="myButton" bindtap='myComment'>
+        <image class="buttonIcon" src="/images/user/comment.png"></image>
+        <view class="buttonText"> 我的点评 </view>
+    </view>
+    <view class="myButton" bindtap="myOrder">
+        <image class="buttonIcon" src="/images/user/order.png"></image>
+        <view class="buttonText" > 我的订单 </view>
+    </view>
+    <view class="myButton" bindtap='myFavor'>
+        <image class="buttonIcon" src="/images/user/favorite.png"></image>
+        <view class="buttonText"> 我的收藏 </view>
+    </view>
+     <view class="myButton" bindtap='toBeStore'>
+        <image class="buttonIcon" src="/images/user/store.png"></image>
+        <view class="buttonText"> 申请成为商家 </view>
+    </view> 
+</view>
+
+
+<!-- <view class="buttonGroup">
+    <view class="myButton">
+        <image class="buttonIcon" src="/images/user/profile.png"></image>
+        <view class="buttonText"> 个人信息 </view>
+    </view>
+</view> -->

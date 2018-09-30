@@ -1,0 +1,127 @@
+/* pages/type/type.wxss */
+
+page{
+    background: #F5F5F5;
+}
+
+.type_selector{
+    height: 80rpx;
+    width: 750rpx;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.type_choice{
+    height: 60rpx;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    width: 335rpx;
+    text-align: center;
+    font-size: 20rpx;
+    line-height: 60rpx;
+    color: #707070;
+}
+
+.type_choice_selected{
+    height: 60rpx;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    width: 335rpx;
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 60rpx;
+    color: #186AAE;
+    border-bottom: 1rpx #186AAE solid;
+}
+
+.sports_type_scroll{
+    background: #F5F5F5;
+    opacity: 0.8;
+    position: fixed;
+    width: 150rpx;
+    height: 100%;
+}
+
+.normal_adver_list{
+    width: 600rpx;
+    margin-left: 150rpx;
+}
+
+
+.selectItem{
+  width: 200rpx;
+    text-align: center;
+    font-size: 20rpx;
+}
+
+.sport_type_text{
+    font-size: 32rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #707070;
+    width: 150rpx;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.sport_type_text_selected{
+    font-size: 32rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    width: 150rpx;
+    flex-shrink: 0;
+    text-align: center;
+    color: black;
+    border-left: 2rpx #1F6BAC solid;
+    /* box-shadow: 2px 2px 1px #888888; */
+}
+
+.normal_adver{
+    background: #F5F5F5;
+    position: relative;
+    display: flex;
+    width: 600rpx;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 5rpx rgba(0,0,0,0.1) solid;
+    border-left: 5rpx rgba(0,0,0,0.1) solid; 
+}
+
+.normal_adver_image{
+    width: 150rpx;
+    height: 150rpx;
+    margin: 10rpx;
+}
+
+.normal_adver_des{
+    width: 410rpx;
+    margin: 10rpx;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.normal_adver_name{
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.normal_adver_price{
+    font-size: 24rpx;
+    line-height: 40rpx;
+    height: 40rpx;
+}
+
+.starContainer{
+    height: 50rpx;
+    padding-bottom: 20rpx;
+}
+
+.star{
+    width: 30rpx;
+    height: 30rpx;
+}

@@ -1,0 +1,113 @@
+<!--pages/detailForProduct/product.wxml-->
+<view class="header">
+    <image class="productImage" mode="aspectFill" src="{{product.showImage}}"></image>
+    <view style='display:flex; flex-direction: column; padding-right:20rpx;' >
+        <view class="productName"> {{product.name}} </view>
+    
+        <view class="headerTextContainer">
+            <view class="gradeDetail">
+                <view class="headerText"> 场地: </view>
+                <view class="starContainer">
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                        <image class="starDetail" id="star1" wx:if="{{product.score1 >= item}}" src="/images/star1.png"></image>
+                        <image class="starDetail" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="gradeDetail">
+                <view class="headerText"> 教练: </view>
+                <view class="starContainer">
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                        <image class="starDetail" id="star1" wx:if="{{product.score2 >= item}}" src="/images/star1.png"></image>
+                        <image class="starDetail" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="gradeDetail">
+                <view class="headerText"> 服务: </view>
+                <view class="starContainer">
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                        <image class="starDetail" id="star1" wx:if="{{product.score3 >= item}}" src="/images/star1.png"></image>
+                        <image class="starDetail" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="gradeDetail">
+                <view class="headerText"> 课程: </view>
+                <view class="starContainer">
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                        <image class="starDetail" id="star1" wx:if="{{product.score4 >= item}}" src="/images/star1.png"></image>
+                        <image class="starDetail" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="starContainer">
+            <view wx:for="{{[1,2,3,4,5]}}" wx:key="">
+                <image class="star"  wx:if="{{product.score >= item}}" src="/images/star1.png"></image>
+                <image class="star" i wx:else src="/images/star0.png"></image>
+            </view>
+        </view>
+    </view>
+    
+
+</view>
+
+<view class="location">
+    <image id="locationIcon"  mode="aspectFill" src="/images/product/location.png"> </image>
+    <swiper class="address_scorll"autoplay="true" interval="5000" duration="100">
+        <swiper-item style="width:590rpx;height:140rpx;display:flex;align-items:center;"wx:for="{{product.address}}" wx:for-item="address"> 
+            <view id="buttonText" > {{address}}</view>
+        </swiper-item>
+    </swiper> 
+    <image id="phoneIcon" bindtap='makePhoneCall' mode="aspectFill" src="/images/product/phone.png"> </image>
+</view>
+
+<view class="description">
+    <view style='display:flex;align-items: center;'>
+        <view id="buttonText" style='color:gray'> 培训班介绍</view>
+        <image id="companyIcon"  mode="aspectFill" src="/images/product/company.png"> </image>
+    </view>
+    <view class="des_text">{{product.description}}</view>
+</view>
+
+<view class="comment">
+    <view class="commentHeader">
+        <view id="commentFirstLine"> 网友点评({{commentNum}})</view>
+        <image class="rightIcon" bindtap='toCommentDetail' src="/images/rightArrow.png"/>
+    </view>
+    <view class="commentItem" wx:for="{{commentList}}" wx:key="">
+        <view class="comment_avatar_name_star">
+            <image class="comment_avatar" src="{{item.avatar}}"/>
+            <view class="comment_name_star">
+                <view class="comment_name">{{item.name}}</view>
+                <view class="comment_starContainer" >
+                    <view wx:for="{{[1,2,3,4,5]}}" wx:for-item="score" wx:key="">
+                        <image class="star1" id="star1" wx:if="{{item.score >= score}}" src="/images/star1.png"></image>
+                        <image class="star1" id="star1" wx:else src="/images/star0.png"></image>
+                    </view>
+                </view>
+            </view>
+            <view class="date">{{item.date}}</view>
+        </view>
+        <view class="comment_content"> {{item.content}} </view>
+        
+    </view>
+    <view style="height: 130rpx; background: white;"/>
+</view>
+
+<view class="myComment">
+    <view  wx:if="{{like}}"class="myCommentItem" id="myCommentItem1">
+        <image class="myCommentIcon" bindtap='dislike' src="/images/product/like.png"/>
+        <view class="myCommentText" bindtap="toComment">取消收藏</view>     
+    </view> 
+    <view wx:else class="myCommentItem" id="myCommentItem1">
+        <image class="myCommentIcon" src="/images/product/nolike.png" bindtap='like'/>
+        <view class="myCommentText" bindtap="toComment">收藏</view>       
+    </view>
+    <view class="myCommentItem">
+        <image src="/images/product/comment.png" class="myCommentIcon" bindtap="toComment"> </image>
+        <view class="myCommentText" bindtap="toComment">写点评</view>
+    </view>
+</view>
